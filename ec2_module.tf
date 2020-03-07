@@ -1,0 +1,2 @@
+module "wordpress" {
+  source ="./module" }
