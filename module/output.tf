@@ -10,7 +10,7 @@ output "Bucketname" {
 }
 
 output "SEC_GROUP" {
-  value = "${aws_security_group_tls.name}"
+  value = "${aws_security_group.allow_tls.name}"
 }
 
 output "AMI" {
@@ -18,5 +18,5 @@ output "AMI" {
 }
 
 output "ROUTE53" {
-  value = "${aws_route53.wordpress.name}"
+  value = "${aws_route53_record.wordpress.name}"
 }
