@@ -1,12 +1,11 @@
 output "IP" {
   value = "${aws_instance.web.public_ip}"
 }
-
 output "KEY" {
   value = "${aws_instance.web.key_name}"
 }
 
-output "Bucketnames" {
+output "Bucketname" {
   value = "${aws_s3_bucket.b2.bucket}"
 }
 
@@ -18,7 +17,7 @@ output "AMI" {
   value = "${aws_instance.web.ami}"
 }
 
-output "Route53" {
+output "ROUTE53" {
   value = "${aws_route53_record.wordpress.name}"
 }
 
