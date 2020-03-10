@@ -1,26 +1,22 @@
-output "IP"  {
-  value   =   "${module.wordpress.IP}"
-
-}
-output "Key" {
-   value   =  "${module.wordpress.KEY}" 
+output "IP" {
+  value = "${module.wordpress.IP}"
 }
 
-output "AMI" {
-   value   =  "${module.wordpress.AMI}" 
+output "KEY" {
+  value = "${module.wordpress.KEY}"
+}
+
+output "Bucketnames" {
+  value = "${module.wordpress.Bucketnames}"
 }
 
 output "SEC_GROUP" {
-   value   =  "${module.wordpress.SEC_GROUP}" 
+  value = "${module.wordpress.SEC_GROUP}"
 }
 
-output "ROUTE53" {
-   value   =  "${module.wordpress.ROUTE53}" 
+output "AMI" {
+  value = "${module.wordpress.AMI}"
 }
 
-output "Bucketname" {
-   value   =  "${module.wordpress.Bucketname}" 
-}
-
-
-
+output "Route53" {
+  value = "${module.wordpress.Route53}"
