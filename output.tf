@@ -18,6 +18,6 @@ output "ROUTE53" {
    value   =  "${module.wordpress.ROUTE53}" 
 }
 
-output "Bucketnames" {
-   value   =  "${module.wordpress.KEY}" 
+output "Bucketname" {
+   value   =  "${module.wordpress.Bucketname}" 
 }
