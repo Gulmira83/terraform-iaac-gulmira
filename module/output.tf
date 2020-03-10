@@ -1,25 +1,24 @@
-  
-output "IP"  {
-  value   =   "${module.wordpress.IP}"
-
-}
-output "Key" {
-   value   =  "${module.wordpress.KEY}" 
+output "IP" {
+  value = "${aws_instance.web.public_ip}"
 }
 
-output "AMI" {
-   value   =  "${module.wordpress.AMI}" 
-}
-
-output "SEC_GROUP" {
-   value   =  "${module.wordpress.SEC_GROUP}" 
-}
-
-output "ROUTE53" {
-   value   =  "${module.wordpress.ROUTE53}" 
+output "KEY" {
+  value = "${aws_instance.web.key_name}"
 }
 
 output "Bucketnames" {
-   value   =  "${module.wordpress.Bucketnames}" 
+  value = "${aws_s3_bucket.b2.bucket}"
+}
+
+output "SEC_GROUP" {
+  value = "${aws_security_group.allow_tls.name}"
+}
+
+output "AMI" {
+  value = "${aws_instance.web.ami}"
+}
+
+output "Route53" {
+  value = "${aws_route53_record.wordpress.name}"
 }
 
