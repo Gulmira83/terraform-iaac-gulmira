@@ -6,8 +6,8 @@ output "KEY" {
   value = "${module.wordpress.KEY}"
 }
 
-output "Bucketnames" {
-  value = "${module.wordpress.Bucketnames}"
+output "Bucketname" {
+  value = "${module.wordpress.Bucketname}"
 }
 
 output "SEC_GROUP" {
