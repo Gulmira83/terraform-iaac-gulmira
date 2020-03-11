@@ -1,4 +1,4 @@
-region = "us-east-3"
+region = "us-west-1"
 
 cidr_block = "10.0.0.0/16"
 
