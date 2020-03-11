@@ -1,4 +1,4 @@
-environment                     =  "HongKong"
+environment                     =  "HongKongs"
 region                          = "ap-east-1"
 
 s3_bucket                       =	"terraform-class-gulmira"
