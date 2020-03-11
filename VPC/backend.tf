@@ -1,8 +1,7 @@
 terraform {
-  backend "s3" {
-    bucket = "terraform-class-gulmira"
-    key    = "path/to/my/us-east-1"
-    region = "us-east-1"
-    #dynamodb_table = "terraform-class20"
+backend "s3" {
+bucket = "terraform-class-gulmira"
+key = "tower/us-east-1/tools/tools
+tools/tower.tfstate"
+region = "us-east-1"
   }
-}
