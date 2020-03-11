@@ -1,23 +1,33 @@
-output "IP"  {
-  value   =   "${module.wordpress.IP}"
-
-}
-output "Key" {
-   value   =  "${module.wordpress.KEY}" 
+output "VPC" {
+  value = "${aws_vpc.dev.id}"
 }
 
-output "AMI" {
-   value   =  "${module.wordpress.AMI}" 
+#Publick Subnet
+output "Subnet1" {
+  value = "${aws_subnet.dev1.id}"
 }
 
-output "SEC_GROUP" {
-   value   =  "${module.wordpress.SEC_GROUP}" 
+output "Subnet2" {
+  value = "${aws_subnet.dev2.id}"
 }
 
-output "ROUTE53" {
-   value   =  "${module.wordpress.ROUTE53}" 
+output "Subnet3" {
+  value = "${aws_subnet.dev3.id}"
 }
 
-output "Bucketname" {
-   value   =  "${module.wordpress.Bucketname}" 
+#Private Subnet
+output "Private Subnett1" {
+  value = "${aws_subnet.dev_private1.id}"
+}
+
+output "Private Subnet2" {
+  value = "${aws_subnet.dev_private2.id}"
+}
+
+output "Private Subnet3" {
+  value = "${aws_subnet.dev_private3.id}"
+}
+
+output "IGW" {
+  value = "${aws_internet_gateway.dev.id}"
 }
