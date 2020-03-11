@@ -1,5 +1,5 @@
-environment                     =  "ap-northeast-2"
-region                          = "Seoul"
+environment                     =  "HongKong"
+region                          = "ap-east-1"
 
 s3_bucket                       =	"terraform-class-gulmira"
 s3_folder_region                =	"us-east-1"
