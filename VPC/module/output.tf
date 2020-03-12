@@ -2,7 +2,7 @@ output "VPC" {
   value = "${aws_vpc.dev.id}"
 }
 
-#Publick Subnet
+#Public Subnet
 output "Subnet1" {
   value = "${aws_subnet.dev1.id}"
 }
