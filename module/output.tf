@@ -1,16 +1,20 @@
 output "IP" {
   value = "${aws_instance.web.public_ip}"
 }
+
 output "KEY" {
-  value = "${aws_instance.web.key_name}"
+  value  = "${aws_instance.web.key_name}"
+
 }
 
 output "Bucketname" {
-  value = "${aws_s3_bucket.b2.bucket}"
+  value  = "${aws_s3_bucket.b.bucket}"
+
 }
 
 output "SEC_GROUP" {
-  value = "${aws_security_group.allow_tls.name}"
+  value  = "${aws_security_group.allow_tls.name}"
+
 }
 
 output "AMI" {
@@ -20,4 +24,3 @@ output "AMI" {
 output "ROUTE53" {
   value = "${aws_route53_record.wordpress.name}"
 }
-

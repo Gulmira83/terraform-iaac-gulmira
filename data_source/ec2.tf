@@ -3,7 +3,7 @@
 provider "aws" {
   region = "us-west-2"
 }
-#Gets ubunt AMI
+#Gets ubuntu AMI
 data "aws_ami" "ubuntu" {
   most_recent = true
   filter {
