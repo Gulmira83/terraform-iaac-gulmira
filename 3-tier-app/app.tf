@@ -1,11 +1,12 @@
 
 
 
+# Create asg with LC
 
-
-module "asg" {
+module "wordpress" {
+    name = "wordpress"
   source = "terraform-aws-modules/autoscaling/aws"
-
+  version = "2.12.0"
   # Launch configuration
   lc_name = "wordpress-lc"
 
@@ -31,3 +32,15 @@ module "asg" {
 
   
 }
+ tags = [
+    {
+      key                 = "Environment"
+      value               = "dev"
+      propagate_at_launch = true
+    },
+    {
+      key                 = "Project"
+      value               = "megasecret"
+      propagate_at_launch = true
+    },
+  ]
