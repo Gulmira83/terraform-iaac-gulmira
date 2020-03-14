@@ -21,3 +21,8 @@ cidr_block3_private = "10.0.13.0/24"
 s3_folder_project               =   	"tower"
 s3_folder_type                  =   	"tools"
 s3_tfstate_file                 =   	"tower.tfstate"
+
+az1               =  "us-east-1a"
+
+az2             =   "us-east-2b"
+az3               =   "us-east-3c"
