@@ -1,0 +1,21 @@
+private_subnet1_range    = "10.0.1.0/24" 
+private_subnet2_range    = "10.0.2.0/24" 
+private_subnet3_range    = "10.0.3.0/24" 
+resource_group_name      = "dev"           #Precreate this while creating Backend Container 
+security_group_name      = "sec_group1" 
+vm1_computername         = "vm1" 
+vm2_computername         = "vm2" 
+vm3_computername         = "vm3" 
+address_space            = "10.0.0.0/16" 
+vnet_name                = "vnet1" 
+location                 = "eastus" 
+ssh_key                  = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsZ7SyxHB5GiDtHaEnrtphOZutP8j5T2c1d+kQMnAlh+TL3sZftA1u69wpjfEDS7d5C+L5P6SPpMhr224QBzPuRFJBCdyIinGHeaikWQ20X42SgDRqyb48CkL/zGABcTYPE86f1k35nUAxhIJHUg928dPC/XQPDwhxYAPfer0zk08jxiSSbKuUNJidOl9+5FVtpQFRDu7P+zNvRMCH+MMiYYg7JX+MqcxH6U024G+b+PvsdAUiJAc4lx9IQNR8TurDG0EZfdLocv6Gof65/5xoBkXdWkcTbzHOfgmrfMmaHxRCrihI/0gQg9nZWn8jCrrO84caIGh5qFzec0y/4Xgd centos@ip-172-31-18-178.eu-west-2.compute.internal" 
+environment              = "dev" 
+ 
+#OS Information 
+publisher                = "OpenLogic" 
+offer                    = "CentOS" 
+sku                      = "7.5" 
+version                  = "latest" 
+admin_username           = "centos" 
+vm_size                  = "Standard_DS1_v2" 
